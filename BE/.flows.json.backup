@@ -1,0 +1,58 @@
+[
+    {
+        "id": "9c0b453e77e5ba17",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "627e7d8230467118",
+        "type": "function",
+        "z": "9c0b453e77e5ba17",
+        "name": "function 1",
+        "func": "const ahihi = \"do cho\"\nmsg.payload = {\n    ahihi\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "b59c58ecd88e02e7"
+            ]
+        ]
+    },
+    {
+        "id": "80e2217e4aa3d18c",
+        "type": "http in",
+        "z": "9c0b453e77e5ba17",
+        "name": "",
+        "url": "/demodata",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "627e7d8230467118"
+            ]
+        ]
+    },
+    {
+        "id": "b59c58ecd88e02e7",
+        "type": "http response",
+        "z": "9c0b453e77e5ba17",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 630,
+        "y": 160,
+        "wires": []
+    }
+]

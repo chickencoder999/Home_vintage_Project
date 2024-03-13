@@ -1,0 +1,6 @@
+vào http://localhost:8888/
+
+nhớ deploy trước trước khi sử dụng 
+
+test
+http://localhost:8888/api/demodata/
